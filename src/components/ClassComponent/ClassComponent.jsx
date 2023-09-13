@@ -74,9 +74,9 @@ export class ClassComponent extends React.Component {
           <input className={style.input} type='number' id='user_number'
             onChange={this.handleChange} value={this.state.userNumber} />
           <button className={style.btn}>Угадать</button>
-          {this.state.endGame ?
+          {this.state.endGame &&
            <button className={style.btn}
-             onClick={this.handleClick}>Сыграть ещё</button> : ''}
+             onClick={this.handleClick}>Сыграть ещё</button>}
         </form>
       </div>
     );
